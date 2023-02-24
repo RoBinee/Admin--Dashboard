@@ -1,72 +1,80 @@
 /* goggle font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300&display=swap');
 
-:root{
-    --main-clr:#f97316;
-    --sub-clr:#64BAAA;
-    --white-clr: #ffffff;
+:root {
+  --main-clr: #f97316;
+  --sub-clr: #64baaa;
+  --white-clr: #ffffff;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    width: 100%;
-    height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    display: flex;
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+}
+/* 
+button {
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+  border-color: transparent;
+} */
+
+/* sidebar */
+.sidebar {
+  background: var(--main-clr);
+  flex: 1;
+  color: var(--white-clr);
+}
+/* 23.02.24 */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0.5rem 0.8rem;
+}
+.logo {
+  fill: var(--white-clr);
+  height: 3rem;
+}
+.logo-name {
+  margin-left: 10px;
+  font-size: 1.5rem;
 }
 
-button{
-    outline: none;
-    cursor: pointer;
-    background: transparent;
-    border-color: transparent;
+.menu-container {
+  margin-top: 2rem;
+}
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.2s;
+}
+.menu:hover {
+  transform: scale(1.1);
+  background: var(--white-clr);
+  color: var(--main-clr);
 }
 
-.sidebar{
-    background: var(--main-clr);
-    flex: 1;
-    color: var(--white-clr);
+.icon {
+  fill: var(--white-clr);
+  height: 1.5rem;
+}
+.menu-name {
+  font-size: 1rem;
+  margin-left: 10px;
 }
 
-.logo-container{
-    border: 1px solid white;
-    display: flex;
-    align-items: center;
-    height: 3rem;
-    
-}
-
-.logo{
-    height: 100%;
-}
-
-.logo-name{
-    font-size: 1.5rem;
-}
-.icon{
-    fill: var(--white-clr);
-    display: block;
-}
-
-.menu-container{
-    border: 3px solid black;
-    margin-top: 3rem;
-}
-.menu{
-    display: flex;
-    align-items: center;
-    justify-content: start;
-    height: 2.5rem;
-    border: 3px solid pink;
-}
-.icon{
-    height: 100%;
-}
-
-.main{
-    background: var(--white-clr);
-    flex: 4;
+/* main */
+.main {
+  background: var(--white-clr);
+  flex: 5;
 }
