@@ -246,11 +246,11 @@ input[id='search-box'] {
 }
 .user-id {
   font-weight: 400;
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: var(--font-clr-black);
 }
 .user-id + p {
   color: var(--font-clr-gray);
-  font-size: 0.75rem;
+  font-size: 0.85rem;
   align-self: center;
 }
