@@ -158,4 +158,21 @@ input[id='search-box'] {
 /* content */
 .content {
   background: var(--gray-clr);
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.projects-sec {
+  border: 1px solid black;
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+.alarm-sec {
+  border: 1px solid black;
+  grid-column: 2 / -1;
+}
+.trending-sec {
+  border: 1px solid black;
+  grid-column: 2 / -1;
 }
