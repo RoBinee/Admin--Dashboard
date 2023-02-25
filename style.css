@@ -214,8 +214,25 @@ input[id='search-box'] {
 
 /* alarm-section */
 .alarm-sec {
-  border: 1px solid black;
   grid-column: 2 / -1;
+}
+.card.large {
+  padding: 1rem;
+}
+.announcement {
+  border-bottom: 1px solid var(--font-clr-gray2);
+  padding: 0.5rem;
+}
+.announcement:last-child {
+  border-bottom: none;
+}
+.announcement > h4 {
+  font-size: 1rem;
+  margin-bottom: 3px;
+}
+.announcement > p {
+  color: var(--font-clr-gray2);
+  font-size: 0.8rem;
 }
 
 /* trending section */
